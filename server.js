@@ -5,6 +5,9 @@ const bodyParser  = require('body-parser');
 const cors        = require('cors');
 require('dotenv').config();
 
+//Require db-connection
+require('./db-connection');
+
 const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
